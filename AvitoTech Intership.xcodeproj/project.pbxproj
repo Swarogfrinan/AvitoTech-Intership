@@ -49,6 +49,7 @@
 		4365DA6829FBDCFD00E8C87C /* AvitoTech IntershipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AvitoTech IntershipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4365DA6C29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoTech_IntershipUITests.swift; sourceTree = "<group>"; };
 		4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoTech_IntershipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4365DA7B29FBDE1D00E8C87C /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 				4365DA4B29FBDCFB00E8C87C /* AppDelegate.swift */,
 				4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */,
 				4365DA4F29FBDCFB00E8C87C /* ViewController.swift */,
+				4365DA7B29FBDE1D00E8C87C /* .gitignore.md */,
 				4365DA5129FBDCFB00E8C87C /* Main.storyboard */,
 				4365DA5429FBDCFD00E8C87C /* Assets.xcassets */,
 				4365DA5629FBDCFD00E8C87C /* LaunchScreen.storyboard */,
