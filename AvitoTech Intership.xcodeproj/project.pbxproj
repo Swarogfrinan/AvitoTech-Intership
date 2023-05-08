@@ -104,14 +104,9 @@
 		4365DA4A29FBDCFB00E8C87C /* AvitoTech Intership */ = {
 			isa = PBXGroup;
 			children = (
-				4365DA4B29FBDCFB00E8C87C /* AppDelegate.swift */,
-				4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */,
 				4365DA8329FBE64B00E8C87C /* Controller */,
 				4365DA8229FBE64400E8C87C /* ViewModel */,
-				4365DA7B29FBDE1D00E8C87C /* .gitignore.md */,
-				4365DA5429FBDCFD00E8C87C /* Assets.xcassets */,
 				4365DA5629FBDCFD00E8C87C /* LaunchScreen.storyboard */,
-				4365DA5929FBDCFD00E8C87C /* Info.plist */,
 			);
 			path = "AvitoTech Intership";
 			sourceTree = "<group>";
@@ -129,6 +124,7 @@
 			children = (
 				4365DA6C29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift */,
 				4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */,
+				43B6343C2A090795005B4FBC /* Supported */,
 			);
 			path = "AvitoTech IntershipUITests";
 			sourceTree = "<group>";
@@ -149,6 +145,18 @@
 				4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		43B6343C2A090795005B4FBC /* Supported */ = {
+			isa = PBXGroup;
+			children = (
+				4365DA7B29FBDE1D00E8C87C /* .gitignore.md */,
+				4365DA5429FBDCFD00E8C87C /* Assets.xcassets */,
+				4365DA5929FBDCFD00E8C87C /* Info.plist */,
+				4365DA4B29FBDCFB00E8C87C /* AppDelegate.swift */,
+				4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */,
+			);
+			path = Supported;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
