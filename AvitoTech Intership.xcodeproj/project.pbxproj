@@ -19,6 +19,7 @@
 		4365DA8129FBE63C00E8C87C /* SuggestionCelVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */; };
 		43B634402A0908C4005B4FBC /* SuggestionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6343F2A0908C4005B4FBC /* SuggestionListVM.swift */; };
 		43B634422A090935005B4FBC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634412A090935005B4FBC /* Data.swift */; };
+		43B634452A090B63005B4FBC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634442A090B63005B4FBC /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCelVM.swift; sourceTree = "<group>"; };
 		43B6343F2A0908C4005B4FBC /* SuggestionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionListVM.swift; sourceTree = "<group>"; };
 		43B634412A090935005B4FBC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		43B634442A090B63005B4FBC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				4365DA4A29FBDCFB00E8C87C /* AvitoTech Intership */,
+				43B634432A090B4F005B4FBC /* API */,
 				43B6343D2A0907D1005B4FBC /* View */,
 				43B6343E2A0907E9005B4FBC /* Tests */,
 				43B6343C2A090795005B4FBC /* Supported */,
@@ -177,6 +180,14 @@
 			);
 			name = Tests;
 			path = "AvitoTech IntershipUITests";
+			sourceTree = "<group>";
+		};
+		43B634432A090B4F005B4FBC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				43B634442A090B63005B4FBC /* Service.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B634422A090935005B4FBC /* Data.swift in Sources */,
+				43B634452A090B63005B4FBC /* Service.swift in Sources */,
 				4365DA5029FBDCFB00E8C87C /* MainContainer.swift in Sources */,
 				4365DA8129FBE63C00E8C87C /* SuggestionCelVM.swift in Sources */,
 				4365DA4C29FBDCFB00E8C87C /* AppDelegate.swift in Sources */,
