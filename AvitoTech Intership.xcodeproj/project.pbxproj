@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		4365DA4C29FBDCFB00E8C87C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA4B29FBDCFB00E8C87C /* AppDelegate.swift */; };
 		4365DA4E29FBDCFB00E8C87C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */; };
-		4365DA5029FBDCFB00E8C87C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA4F29FBDCFB00E8C87C /* ViewController.swift */; };
+		4365DA5029FBDCFB00E8C87C /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */; };
 		4365DA5529FBDCFD00E8C87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4365DA5429FBDCFD00E8C87C /* Assets.xcassets */; };
 		4365DA5829FBDCFD00E8C87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4365DA5629FBDCFD00E8C87C /* LaunchScreen.storyboard */; };
 		4365DA6329FBDCFD00E8C87C /* AvitoTech_IntershipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA6229FBDCFD00E8C87C /* AvitoTech_IntershipTests.swift */; };
 		4365DA6D29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA6C29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift */; };
 		4365DA6F29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */; };
+		4365DA7D29FBE48700E8C87C /* MainContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA7C29FBE48700E8C87C /* MainContainerViewModel.swift */; };
+		4365DA7F29FBE62200E8C87C /* SuggestionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA7E29FBE62200E8C87C /* SuggestionCellViewModel.swift */; };
+		4365DA8129FBE63C00E8C87C /* SuggestionCelVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		4365DA4829FBDCFB00E8C87C /* AvitoTech Intership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AvitoTech Intership.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4365DA4B29FBDCFB00E8C87C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4365DA4F29FBDCFB00E8C87C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
 		4365DA5429FBDCFD00E8C87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4365DA5729FBDCFD00E8C87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4365DA5929FBDCFD00E8C87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		4365DA6C29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoTech_IntershipUITests.swift; sourceTree = "<group>"; };
 		4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoTech_IntershipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4365DA7B29FBDE1D00E8C87C /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		4365DA7C29FBE48700E8C87C /* MainContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerViewModel.swift; sourceTree = "<group>"; };
+		4365DA7E29FBE62200E8C87C /* SuggestionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCellViewModel.swift; sourceTree = "<group>"; };
+		4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCelVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,8 @@
 			children = (
 				4365DA4B29FBDCFB00E8C87C /* AppDelegate.swift */,
 				4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */,
-				4365DA4F29FBDCFB00E8C87C /* ViewController.swift */,
+				4365DA8329FBE64B00E8C87C /* Controller */,
+				4365DA8229FBE64400E8C87C /* ViewModel */,
 				4365DA7B29FBDE1D00E8C87C /* .gitignore.md */,
 				4365DA5429FBDCFD00E8C87C /* Assets.xcassets */,
 				4365DA5629FBDCFD00E8C87C /* LaunchScreen.storyboard */,
@@ -124,6 +131,24 @@
 				4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */,
 			);
 			path = "AvitoTech IntershipUITests";
+			sourceTree = "<group>";
+		};
+		4365DA8229FBE64400E8C87C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4365DA7C29FBE48700E8C87C /* MainContainerViewModel.swift */,
+				4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */,
+				4365DA7E29FBE62200E8C87C /* SuggestionCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4365DA8329FBE64B00E8C87C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4365DA5029FBDCFB00E8C87C /* ViewController.swift in Sources */,
+				4365DA5029FBDCFB00E8C87C /* MainContainer.swift in Sources */,
+				4365DA8129FBE63C00E8C87C /* SuggestionCelVM.swift in Sources */,
 				4365DA4C29FBDCFB00E8C87C /* AppDelegate.swift in Sources */,
 				4365DA4E29FBDCFB00E8C87C /* SceneDelegate.swift in Sources */,
+				4365DA7D29FBE48700E8C87C /* MainContainerViewModel.swift in Sources */,
+				4365DA7F29FBE62200E8C87C /* SuggestionCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
