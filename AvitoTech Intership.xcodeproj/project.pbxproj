@@ -16,7 +16,6 @@
 		4365DA6D29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA6C29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift */; };
 		4365DA6F29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */; };
 		4365DA7D29FBE48700E8C87C /* MainContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA7C29FBE48700E8C87C /* MainContainerViewModel.swift */; };
-		4365DA7F29FBE62200E8C87C /* SuggestionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA7E29FBE62200E8C87C /* SuggestionCellViewModel.swift */; };
 		4365DA8129FBE63C00E8C87C /* SuggestionCelVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +51,6 @@
 		4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoTech_IntershipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4365DA7B29FBDE1D00E8C87C /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 		4365DA7C29FBE48700E8C87C /* MainContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerViewModel.swift; sourceTree = "<group>"; };
-		4365DA7E29FBE62200E8C87C /* SuggestionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCellViewModel.swift; sourceTree = "<group>"; };
 		4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCelVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				4365DA4A29FBDCFB00E8C87C /* AvitoTech Intership */,
-				4365DA6129FBDCFD00E8C87C /* AvitoTech IntershipTests */,
-				4365DA6B29FBDCFD00E8C87C /* AvitoTech IntershipUITests */,
+				43B6343D2A0907D1005B4FBC /* View */,
+				43B6343E2A0907E9005B4FBC /* Tests */,
+				43B6343C2A090795005B4FBC /* Supported */,
 				4365DA4929FBDCFB00E8C87C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,7 +105,6 @@
 			children = (
 				4365DA8329FBE64B00E8C87C /* Controller */,
 				4365DA8229FBE64400E8C87C /* ViewModel */,
-				4365DA5629FBDCFD00E8C87C /* LaunchScreen.storyboard */,
 			);
 			path = "AvitoTech Intership";
 			sourceTree = "<group>";
@@ -124,9 +122,8 @@
 			children = (
 				4365DA6C29FBDCFD00E8C87C /* AvitoTech_IntershipUITests.swift */,
 				4365DA6E29FBDCFD00E8C87C /* AvitoTech_IntershipUITestsLaunchTests.swift */,
-				43B6343C2A090795005B4FBC /* Supported */,
 			);
-			path = "AvitoTech IntershipUITests";
+			name = "AvitoTech IntershipUITests";
 			sourceTree = "<group>";
 		};
 		4365DA8229FBE64400E8C87C /* ViewModel */ = {
@@ -134,7 +131,6 @@
 			children = (
 				4365DA7C29FBE48700E8C87C /* MainContainerViewModel.swift */,
 				4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */,
-				4365DA7E29FBE62200E8C87C /* SuggestionCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -157,6 +153,24 @@
 				4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */,
 			);
 			path = Supported;
+			sourceTree = "<group>";
+		};
+		43B6343D2A0907D1005B4FBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4365DA5629FBDCFD00E8C87C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43B6343E2A0907E9005B4FBC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4365DA6B29FBDCFD00E8C87C /* AvitoTech IntershipUITests */,
+				4365DA6129FBDCFD00E8C87C /* AvitoTech IntershipTests */,
+			);
+			name = Tests;
+			path = "AvitoTech IntershipUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +308,6 @@
 				4365DA4C29FBDCFB00E8C87C /* AppDelegate.swift in Sources */,
 				4365DA4E29FBDCFB00E8C87C /* SceneDelegate.swift in Sources */,
 				4365DA7D29FBE48700E8C87C /* MainContainerViewModel.swift in Sources */,
-				4365DA7F29FBE62200E8C87C /* SuggestionCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
