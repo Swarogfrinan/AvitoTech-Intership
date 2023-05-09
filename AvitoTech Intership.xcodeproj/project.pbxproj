@@ -20,6 +20,9 @@
 		43B634402A0908C4005B4FBC /* SuggestionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6343F2A0908C4005B4FBC /* SuggestionListVM.swift */; };
 		43B634422A090935005B4FBC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634412A090935005B4FBC /* Data.swift */; };
 		43B634452A090B63005B4FBC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634442A090B63005B4FBC /* Service.swift */; };
+		43B634472A091B13005B4FBC /* SuggestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634462A091B13005B4FBC /* SuggestionList.swift */; };
+		43B634492A091D71005B4FBC /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634482A091D71005B4FBC /* SuggestionCell.swift */; };
+		43B6344B2A093B6D005B4FBC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6344A2A093B6D005B4FBC /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		43B6343F2A0908C4005B4FBC /* SuggestionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionListVM.swift; sourceTree = "<group>"; };
 		43B634412A090935005B4FBC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		43B634442A090B63005B4FBC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		43B634462A091B13005B4FBC /* SuggestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionList.swift; sourceTree = "<group>"; };
+		43B634482A091D71005B4FBC /* SuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
+		43B6344A2A093B6D005B4FBC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		4365DA4A29FBDCFB00E8C87C /* AvitoTech Intership */ = {
 			isa = PBXGroup;
 			children = (
+				4365DA5929FBDCFD00E8C87C /* Info.plist */,
 				4365DA8329FBE64B00E8C87C /* Controller */,
 				4365DA8229FBE64400E8C87C /* ViewModel */,
 			);
@@ -137,8 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				4365DA7C29FBE48700E8C87C /* MainContainerViewModel.swift */,
-				4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */,
 				43B6343F2A0908C4005B4FBC /* SuggestionListVM.swift */,
+				4365DA8029FBE63C00E8C87C /* SuggestionCelVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 			children = (
 				4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */,
 				43B634412A090935005B4FBC /* Data.swift */,
+				43B634462A091B13005B4FBC /* SuggestionList.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,9 +165,9 @@
 			children = (
 				4365DA7B29FBDE1D00E8C87C /* .gitignore.md */,
 				4365DA5429FBDCFD00E8C87C /* Assets.xcassets */,
-				4365DA5929FBDCFD00E8C87C /* Info.plist */,
 				4365DA4B29FBDCFB00E8C87C /* AppDelegate.swift */,
 				4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */,
+				43B6344A2A093B6D005B4FBC /* Extensions.swift */,
 			);
 			path = Supported;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				4365DA5629FBDCFD00E8C87C /* LaunchScreen.storyboard */,
+				43B634482A091D71005B4FBC /* SuggestionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,13 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B634472A091B13005B4FBC /* SuggestionList.swift in Sources */,
 				43B634422A090935005B4FBC /* Data.swift in Sources */,
 				43B634452A090B63005B4FBC /* Service.swift in Sources */,
+				43B634492A091D71005B4FBC /* SuggestionCell.swift in Sources */,
 				4365DA5029FBDCFB00E8C87C /* MainContainer.swift in Sources */,
 				4365DA8129FBE63C00E8C87C /* SuggestionCelVM.swift in Sources */,
 				4365DA4C29FBDCFB00E8C87C /* AppDelegate.swift in Sources */,
 				4365DA4E29FBDCFB00E8C87C /* SceneDelegate.swift in Sources */,
 				43B634402A0908C4005B4FBC /* SuggestionListVM.swift in Sources */,
+				43B6344B2A093B6D005B4FBC /* Extensions.swift in Sources */,
 				4365DA7D29FBE48700E8C87C /* MainContainerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -479,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -22,7 +22,7 @@ class MainContainerVM {
     }
     
     func viewModelForSuggestionList() -> SuggestionListVM {
-        return SuggestionListVM(data.list)
+        return SuggestionListVM(data: data.list)
     }
     
 }

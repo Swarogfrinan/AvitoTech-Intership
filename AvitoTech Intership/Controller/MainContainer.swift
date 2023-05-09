@@ -36,7 +36,7 @@ private extension MainContainer {
     }
     
     func makeCollectionView() -> UICollectionView {
-        let suggestionCollectionView = self.viewModel.viewModelForSeggustionList()
+        let suggestionCollectionView = self.viewModel.viewModelForSuggestionList()
         let collectionController = SuggestionList(viewModel : suggesctionViewModel)
         addChild(collectionController)
         collectionController.delegate = self
@@ -55,7 +55,7 @@ private extension MainContainer {
     }
 }
 
-private extension MainContainer: SuggestionsListDelegate {
+extension MainContainer: SuggestionsListDelegate {
     func selectedSuggestion(suggestion: SuggestionCellVM) {
         viewModel.selectedSuggestion = suggestion
         chooseButton = chooseButtonSettings()
