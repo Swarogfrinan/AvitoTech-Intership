@@ -5,10 +5,10 @@ class SuggestionCell: UICollectionViewCell {
     // MARK: - Properties
     var viewModel: SuggestionCellVM? {
         didSet {
-//            title.text = viewModel!.title
-//            subtitle.text = viewModel!.description
-//            price.text = viewModel!.price
-//            setImageIcon()
+            title.text = viewModel!.title
+            subTitle.text = viewModel!.description
+            price.text = viewModel!.price
+            setImageIcon()
         }
     }
     

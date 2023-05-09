@@ -23,6 +23,7 @@
 		43B634472A091B13005B4FBC /* SuggestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634462A091B13005B4FBC /* SuggestionList.swift */; };
 		43B634492A091D71005B4FBC /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B634482A091D71005B4FBC /* SuggestionCell.swift */; };
 		43B6344B2A093B6D005B4FBC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6344A2A093B6D005B4FBC /* Extensions.swift */; };
+		43B6344D2A0A605F005B4FBC /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6344C2A0A605F005B4FBC /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		43B634462A091B13005B4FBC /* SuggestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionList.swift; sourceTree = "<group>"; };
 		43B634482A091D71005B4FBC /* SuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
 		43B6344A2A093B6D005B4FBC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		43B6344C2A0A605F005B4FBC /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */,
+				43B6344C2A0A605F005B4FBC /* AlertController.swift */,
 				43B634412A090935005B4FBC /* Data.swift */,
 				43B634462A091B13005B4FBC /* SuggestionList.swift */,
 			);
@@ -333,6 +336,7 @@
 				43B634422A090935005B4FBC /* Data.swift in Sources */,
 				43B634452A090B63005B4FBC /* Service.swift in Sources */,
 				43B634492A091D71005B4FBC /* SuggestionCell.swift in Sources */,
+				43B6344D2A0A605F005B4FBC /* AlertController.swift in Sources */,
 				4365DA5029FBDCFB00E8C87C /* MainContainer.swift in Sources */,
 				4365DA8129FBE63C00E8C87C /* SuggestionCelVM.swift in Sources */,
 				4365DA4C29FBDCFB00E8C87C /* AppDelegate.swift in Sources */,
