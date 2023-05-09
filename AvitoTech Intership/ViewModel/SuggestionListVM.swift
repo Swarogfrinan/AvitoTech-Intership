@@ -1,5 +1,6 @@
 import Foundation
 class SuggestionListVM {
+    
     private var data: [Suggestion]!
     var listCount: Int {
         return data.count

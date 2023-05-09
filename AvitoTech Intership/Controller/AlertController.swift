@@ -2,6 +2,7 @@ import UIKit
 
 class AlertController: UIAlertController {
     //MARK: - Properties
+    
     var viewModel: SuggestionCellVM? {
         didSet {
             configureUI()
