@@ -13,6 +13,7 @@ class MainContainer: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
     }
     //MARK: - Selectors
     @objc func handleChoseBUtton(sender: UIButton) {
@@ -31,7 +32,7 @@ private extension MainContainer {
     func makeCloseIcon() -> UIImageView {
         let image = UIImageView()
         image.image = UIImage(systemName: "xMark")
-        image.contentMode = .scaleAspectFill
+        image.contentMode = .scaleAspectFit
         return image
     }
     
