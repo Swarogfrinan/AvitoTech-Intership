@@ -105,6 +105,14 @@ class SuggestionCell: UICollectionViewCell {
             }
         }
     }
+    override var isHighlighted: Bool {
+        didSet {
+            
+            UIView.animate(withDuration: 0.4) {
+                self.backgroundColor = self.isHighlighted ? .grayLight : .cellBackground
+            }
+        }
+    }
     
     override var isSelected: Bool {
         didSet {
