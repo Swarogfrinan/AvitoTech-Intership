@@ -69,7 +69,7 @@
 		43B6344A2A093B6D005B4FBC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		43B6344C2A0A605F005B4FBC /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		43B634542A0A8C98005B4FBC /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		43B634562A0A8CD1005B4FBC /* result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = result.json; path = "../../improve-ad-avito/improve-ad/Supported/result.json"; sourceTree = "<group>"; };
+		43B634562A0A8CD1005B4FBC /* result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +181,6 @@
 			children = (
 				4365DA7B29FBDE1D00E8C87C /* .gitignore.md */,
 				4365DA5429FBDCFD00E8C87C /* Assets.xcassets */,
-				43B634562A0A8CD1005B4FBC /* result.json */,
 				430B49262A19356800EC67BD /* Application */,
 				43B6344A2A093B6D005B4FBC /* Extensions.swift */,
 				430B49272A1935AA00EC67BD /* Constant.swift */,
@@ -219,6 +218,7 @@
 		43B634532A0A8C97005B4FBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				43B634562A0A8CD1005B4FBC /* result.json */,
 				43B634542A0A8C98005B4FBC /* Data.swift */,
 			);
 			name = Model;

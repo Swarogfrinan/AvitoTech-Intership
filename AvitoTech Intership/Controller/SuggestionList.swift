@@ -1,6 +1,6 @@
 import UIKit
 
-private let reuseIdentifier = "suggestionCell"
+
 
 protocol SuggestionsListDelegate {
     func selectedSuggestion(suggestion: SuggestionCellVM)
@@ -15,7 +15,7 @@ class SuggestionList: UICollectionViewController {
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.register(SuggestionCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView.register(SuggestionCell.self, forCellWithReuseIdentifier: Constants.reuseIdentifier)
         collectionView.backgroundColor = .white
     }
     
@@ -38,7 +38,7 @@ extension SuggestionList {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SuggestionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.reuseIdentifier, for: indexPath) as! SuggestionCell
         cell.viewModel = viewModel.viewModelForCell(indexPath: indexPath)
         
         return cell
@@ -58,7 +58,13 @@ extension SuggestionList {
 extension SuggestionList: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = CGFloat(collectionView.frame.size.width)
-        let cellHeight = CGFloat(180)
+        let cellHeight = Constants.cellHeight
         return CGSize(width: cellWidth, height: cellHeight)
     }
+}
+
+// MARK: - Constants
+private extension Constants {
+    static let reuseIdentifier = "suggestionCell"
+    static let cellHeight : CGFloat = 180
 }
