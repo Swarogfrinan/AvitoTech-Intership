@@ -41,8 +41,8 @@ private extension MainContainer {
     func makeScreenTitle() -> UILabel {
         let title = UILabel()
         title.text = self.viewModel.title
-        title.font = UIFont.boldSystemFont(ofSize: 30)
-        title.numberOfLines = 0
+        title.font = UIFont.boldSystemFont(ofSize: Constants.fontOfScreenTitle)
+        title.numberOfLines = .zero
         return title
     }
     
@@ -65,7 +65,7 @@ private extension MainContainer {
         button.setTitleColor(isActive ? .white : .mainBlue, for: .normal)
         button.setTitle(title, for: .normal)
         button.backgroundColor = isActive ? .mainBlue : .disableBlue
-        button.layer.cornerRadius = 5
+        button.layer.cornerRadius = Constants.cornerRadius
         button.addTarget(self, action: #selector(handleChoseButton(sender:)), for: .touchUpInside)
         return button
     }
@@ -84,17 +84,17 @@ extension MainContainer {
         button.setTitleColor(isActive ? .white : .mainBlue, for: .normal)
         button.setTitle(title, for: .normal)
         button.backgroundColor = isActive ? .mainBlue : .disableBlue
-        button.layer.cornerRadius = 5
+        button.layer.cornerRadius = Constants.cornerRadius
         button.addTarget(self, action: #selector(handleChoseButton(sender:)), for: .touchUpInside)
         return button
     }
     func configureChouseButton() {
         contentView.addSubview(chooseButton)
         NSLayoutConstraint.activate([
-            chooseButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -25),
-            chooseButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            chooseButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-            chooseButton.heightAnchor.constraint(equalToConstant: 50)
+            chooseButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.bottom),
+            chooseButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constants.spacing),
+            chooseButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Constants.spacing),
+            chooseButton.heightAnchor.constraint(equalToConstant: Constants.defaultHeight)
         ])
     }
 }
@@ -118,21 +118,21 @@ extension MainContainer {
         
         NSLayoutConstraint.activate([
             contentView.topAnchor.constraint(equalTo: view.topAnchor),
-            contentView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15),
-            contentView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15),
+            contentView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: Constants.indent),
+            contentView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -Constants.indent),
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         contentView.addSubview(closeIcon)
         NSLayoutConstraint.activate([
             closeIcon.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            closeIcon.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30),
-            closeIcon.widthAnchor.constraint(equalToConstant: 20),
-            closeIcon.heightAnchor.constraint(equalToConstant: 50)
+            closeIcon.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.top),
+            closeIcon.widthAnchor.constraint(equalToConstant: Constants.spacing),
+            closeIcon.heightAnchor.constraint(equalToConstant: Constants.defaultHeight)
         ])
         
         contentView.addSubview(screenTitle)
         NSLayoutConstraint.activate([
-            screenTitle.topAnchor.constraint(equalTo: closeIcon.bottomAnchor, constant: 20),
+            screenTitle.topAnchor.constraint(equalTo: closeIcon.bottomAnchor, constant: Constants.spacing),
             screenTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             screenTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor)
         ])
@@ -141,11 +141,10 @@ extension MainContainer {
         contentView.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: screenTitle.bottomAnchor, constant: 20),
+            collectionView.topAnchor.constraint(equalTo: screenTitle.bottomAnchor, constant: Constants.spacing),
             collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: chooseButton.topAnchor, constant: -20),
+            collectionView.bottomAnchor.constraint(equalTo: chooseButton.topAnchor, constant: -Constants.spacing),
             collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor)
-            
         ])
     }
 }
