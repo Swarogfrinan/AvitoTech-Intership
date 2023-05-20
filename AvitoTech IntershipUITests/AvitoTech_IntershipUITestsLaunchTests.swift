@@ -1,10 +1,3 @@
-//
-//  AvitoTech_IntershipUITestsLaunchTests.swift
-//  AvitoTech IntershipUITests
-//
-//  Created by Ilya Vasilev on 28.04.2023.
-//
-
 import XCTest
 
 final class AvitoTech_IntershipUITestsLaunchTests: XCTestCase {
