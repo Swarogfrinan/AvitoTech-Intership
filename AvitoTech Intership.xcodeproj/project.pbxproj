@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430B49252A1913EB00EC67BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B49242A1913EA00EC67BD /* AppDelegate.swift */; };
 		4365DA4E29FBDCFB00E8C87C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */; };
 		4365DA5029FBDCFB00E8C87C /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */; };
 		4365DA5529FBDCFD00E8C87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4365DA5429FBDCFD00E8C87C /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430B49242A1913EA00EC67BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4365DA4829FBDCFB00E8C87C /* AvitoTech Intership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AvitoTech Intership.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4365DA4F29FBDCFB00E8C87C /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
@@ -120,8 +122,8 @@
 			children = (
 				4365DA5929FBDCFD00E8C87C /* Info.plist */,
 				43B634532A0A8C97005B4FBC /* Model */,
-				4365DA8329FBE64B00E8C87C /* Controller */,
 				4365DA8229FBE64400E8C87C /* ViewModel */,
+				4365DA8329FBE64B00E8C87C /* Controller */,
 			);
 			path = "AvitoTech Intership";
 			sourceTree = "<group>";
@@ -169,6 +171,7 @@
 				4365DA7B29FBDE1D00E8C87C /* .gitignore.md */,
 				4365DA5429FBDCFD00E8C87C /* Assets.xcassets */,
 				43B634562A0A8CD1005B4FBC /* result.json */,
+				430B49242A1913EA00EC67BD /* AppDelegate.swift */,
 				4365DA4D29FBDCFB00E8C87C /* SceneDelegate.swift */,
 				43B6344A2A093B6D005B4FBC /* Extensions.swift */,
 			);
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430B49252A1913EB00EC67BD /* AppDelegate.swift in Sources */,
 				43B634472A091B13005B4FBC /* SuggestionList.swift in Sources */,
 				43B634452A090B63005B4FBC /* Service.swift in Sources */,
 				43B634492A091D71005B4FBC /* SuggestionCell.swift in Sources */,
