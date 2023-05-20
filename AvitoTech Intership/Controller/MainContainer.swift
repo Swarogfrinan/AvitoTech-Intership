@@ -11,12 +11,14 @@ class MainContainer: UIViewController {
     lazy var contentView = makeContentView()
     lazy var chooseButton = makeChooseButton()
     
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
     }
     //MARK: - Selectors
-    @objc func handleChoseBUtton(sender: UIButton) {
+    @objc func handleChoseButton(sender: UIButton) {
         UIButton.animateHandleButton(sender: sender) {
             guard let suggestion = self.viewModel.selectedSuggestion else {
                 self.initAlertController(suggestion: nil)
@@ -31,7 +33,7 @@ class MainContainer: UIViewController {
 private extension MainContainer {
     func makeCloseIcon() -> UIImageView {
         let image = UIImageView()
-        image.image = UIImage(systemName: "xMark")
+        image.image = UIImage(systemName: "xmark")
         image.contentMode = .scaleAspectFit
         return image
     }
@@ -64,7 +66,7 @@ private extension MainContainer {
         button.setTitle(title, for: .normal)
         button.backgroundColor = isActive ? .mainBlue : .disableBlue
         button.layer.cornerRadius = 5
-        button.addTarget(self, action: #selector(handleChoseBUtton(sender:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleChoseButton(sender:)), for: .touchUpInside)
         return button
     }
 }
@@ -83,7 +85,7 @@ extension MainContainer {
         button.setTitle(title, for: .normal)
         button.backgroundColor = isActive ? .mainBlue : .disableBlue
         button.layer.cornerRadius = 5
-        button.addTarget(self, action: #selector(handleChoseBUtton(sender:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleChoseButton(sender:)), for: .touchUpInside)
         return button
     }
     func configureChouseButton() {
